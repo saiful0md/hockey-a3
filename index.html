@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys </title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/560c2b48fa.js" crossorigin="anonymous"></script>
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- link tailwind and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    'font-family': {
+                        'manrope': '"Manrope", sans-serif',
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                        'color-primary': '#FF4240',
+                        'title-color': '#131318',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-[manrope]">
+    <header class="lg:container lg:mx-auto px-2 lg:px-14 lg:pb-24">
+        <!-- navbar -->
+        <nav class="pt-2 pb-6 lg:py-12">
+            <div class="navbar p-0">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-2xl lg:text-4xl text-title-color font-extrabold">Hockey<span
+                            class="text-2xl lg:text-4xl text-color-primary font-extrabold">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class=" menu-horizontal text-[#424247] text-base font-normal  gap-11 ">
+                        <li><a class="hover:text-color-primary hover:font-bold duration-700">Home</a></li>
+                        <li><a class="hover:text-color-primary hover:font-bold duration-700">About</a></li>
+                        <li><a class="hover:text-color-primary hover:font-bold duration-700">Pages</a></li>
+                        <li><a class="hover:text-color-primary hover:font-bold duration-700">Blog</a></li>
+                        <li><a class="hover:text-color-primary hover:font-bold duration-700">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end items-center gap-7">
+                    <i class="fa-solid fa-magnifying-glass  text-[#89898B] items-center hidden lg:flex"></i>
+                    <a
+                        class="bg-color-primary px-4 py-2 lg:px-6 lg:py-[15px] rounded-lg text-lg lg:text-xl font-bold text-white">Get
+                        Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <div>
+            <div class="carousel w-full ">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="/Images/lg1.png" class="w-full hidden lg:flex" />
+                    <img src="/Images/1.png" class="w-full flex lg:hidden" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 lg:left-5 lg:right-[89%] lg:top-[90%] left-[37%] top-[80%] right-[40%]">
+                        <a href="#slide4" class="btn btn-circle bg-[#131318] text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/Images/lg1.png" class="w-full hidden lg:flex" />
+                    <img src="/Images/1.png" class="w-full flex lg:hidden" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 lg:left-5 lg:right-[89%] lg:top-[90%] left-[37%] top-[80%] right-[40%]">
+                        <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="/Images/lg1.png" class="w-full hidden lg:flex" />
+                    <img src="/Images/1.png" class="w-full flex lg:hidden" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 lg:left-5 lg:right-[89%] lg:top-[90%] left-[37%] top-[80%] right-[40%]">
+                        <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>
